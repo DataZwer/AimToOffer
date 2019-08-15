@@ -14,7 +14,6 @@ import java.util.Stack;
 public class MaxMulValue {
     public static void main(String[] args) {
         int[] arr = {1, 43, -1, 34, -345};
-
     }
 
     /**
@@ -30,11 +29,7 @@ public class MaxMulValue {
         Stack stack_3 = new Stack();
         for (int i = 0; i < arr.length; i++) {
 
-
         }
-
-
-
 
         return 0;
     }
