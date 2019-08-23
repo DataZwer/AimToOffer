@@ -7,7 +7,6 @@ public class QSTest {
         int[] arr = new int[] {1, 3, -34, 55, -344, 346634, 33, 4};
         int[] arr_t = new int[] {1, 1, 2, 1, 1, 3, 34, 1, 1, 1, 434, 40};
         int[] arr1 = new int[] {1};
-
         int[] arr2 = {};
 
 
@@ -27,9 +26,9 @@ public class QSTest {
     public static void qSorted_1(int[] arr, int start, int end) { 
         if (start == end) return;
         int index = partition(arr, start, end);
+
         if (index > start) qSorted_1(arr, start, index-1);
         if (index < end) qSorted_1(arr, index+1, end);
-
     }
 
     /**
