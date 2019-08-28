@@ -16,7 +16,8 @@ import java.util.Scanner;
 public class Problem50 {
     public static void main(String[] args) {
         String s = "abaccdeff";
-        // System.out.println(firstOnce(s));
+        System.out.println(firstOnce(s));
+
         Scanner sc = new Scanner(System.in);
         StringBuilder str1 = new StringBuilder(sc.nextLine());
         StringBuilder str2 = new StringBuilder(sc.nextLine());

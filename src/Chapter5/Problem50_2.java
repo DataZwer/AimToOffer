@@ -7,7 +7,7 @@ import java.util.HashMap;
 
 /**
  *@ClassName Problem50_2
- *@Description TODO
+ *@Description TODO:
  *@Version 1.0
  */
 public class Problem50_2 {

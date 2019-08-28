@@ -3,6 +3,8 @@ package Test;/**
  * @create 2019-08-13-16:43
  */
 
+import org.junit.Test;
+
 /**
  *@ClassName StringAndNumber
  *@Description TODO
@@ -17,6 +19,12 @@ public class StringAndNumber {
         String string2 = String.valueOf(a);
         System.out.println(string2.getClass());
 
+    }
+
+
+    @Test
+    public void test1() {
+        System.out.println(10 / 3);
     }
 
 }

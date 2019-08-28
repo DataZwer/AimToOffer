@@ -21,6 +21,7 @@ public class BinarySearch {
         while(left <= right) {
             int midle = (left+right) / 2;
             if (elem == arr[midle]) return midle;
+
             if (elem > arr[midle]) left = midle+1;
             else right = midle - 1;
         }
