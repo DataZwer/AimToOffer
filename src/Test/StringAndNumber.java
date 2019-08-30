@@ -25,6 +25,10 @@ public class StringAndNumber {
     @Test
     public void test1() {
         System.out.println(10 / 3);
+        int res = 4 ^ 6;
+        System.out.println(res);
+
+        System.out.println(3 << 1);
     }
 
 }

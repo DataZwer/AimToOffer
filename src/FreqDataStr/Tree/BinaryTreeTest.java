@@ -332,4 +332,43 @@ public class BinaryTreeTest {
         return count;
     }
 
+    /**
+     * @Description: GetTreeDepth is TODO: 获取二叉树的深度
+     * @param: [root]
+     * @return: int
+     */
+    public static int GetTreeDepth(TreeNode root) {
+
+        if(root == null) return 0;
+        int nLeft = GetTreeDepth(root.left);
+        int nRight= GetTreeDepth(root.right);
+
+        return nLeft > nRight ? (nLeft+1) : (nRight-1);
+    }
+
+
+
+    public static int left = 0;
+    public static int right = 0;
+    public static int depth = 0;
+    /**
+     * @Description: IsBalance is TODO: 平衡二叉树判断
+     * @param: [root]
+     * @return: boolean
+     */
+    private boolean IsBalance(TreeNode root) {
+        if (root == null) {
+            depth = 0;
+            return true;
+        }
+        if (IsBalance(root.left) && IsBalance(root.right)) {
+            int diff = left - right;
+            if (depth <= 1 && diff >= -1) {
+                depth = 1 + (left > right ? left : right);
+                return true;
+            }
+        }
+        return false;
+    }
+
 }
