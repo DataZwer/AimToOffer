@@ -4,16 +4,16 @@ package AlgorithmDesignAndAnalysis.Chapter1Recur;/**
  */
 
 /**
- *@ClassName FullPermutation
- *@Description TODO：实现某个对象的全排列
+ *@ClassName Permutation
+ *@Description TODO：实现某个对象的全排列(A(n, n))
  *@Version 1.0
  */
 
 
-public class FullPermutation {
+public class Permutation {
     public static void main(String[] args) {
-        int[] arr = {1, 2, 3, 4, 5};
-        int k = 2;
+        int[] arr = {1, 2, 3, 4};
+        int k = 0;
         int m = arr.length-1;
         perm(arr, k, m);
     }
