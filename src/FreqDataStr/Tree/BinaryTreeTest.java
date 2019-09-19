@@ -122,7 +122,6 @@ public class BinaryTreeTest {
             if(!treeNodeStack.isEmpty()) {
                 root = treeNodeStack.peek();
                 System.out.print(root.value + " ");
-
                 treeNodeStack.pop();
                 if (root != null) root = root.right;
             }
@@ -273,8 +272,9 @@ public class BinaryTreeTest {
 
         int maxWidth = 1;
         while (true) {
-            int len = tmp.size();
+            int len = tmp.size(); // 队列里面的每一层的节点数
             if (len == 0) break;
+
             while (len > 0) {
                 TreeNode nodeTmp = tmp.poll();
                 --len;

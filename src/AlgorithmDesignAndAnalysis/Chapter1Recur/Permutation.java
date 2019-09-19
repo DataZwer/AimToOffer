@@ -3,6 +3,10 @@ package AlgorithmDesignAndAnalysis.Chapter1Recur;/**
  * @create 2019-08-23-16:40
  */
 
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.HashSet;
+
 /**
  *@ClassName Permutation
  *@Description TODO：实现某个对象的全排列(A(n, n))

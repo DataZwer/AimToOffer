@@ -20,6 +20,7 @@ public class Problem5 {
         return String.valueOf(sb);
     }
 
+    // 双指针解决问题
     public static String replaceSpace_2(StringBuffer str) {
         int oldLen = str.length();
         int len = oldLen;
