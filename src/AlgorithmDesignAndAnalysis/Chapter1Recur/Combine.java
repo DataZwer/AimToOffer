@@ -12,12 +12,17 @@ import java.util.Stack;
  */
 public class Combine {
     public static void main(String[] args) {
-        int shu[] = {1,2,3,4};
-        f(shu,3,0,0); // 从这个数组4个数中选择三个
+        int shu[] = {1,2,3,4,63,2};
+        f(shu,4,0,0); // 从这个数组4个数中选择三个
     }
     public static Stack<Integer> stack = new Stack<Integer>();
 
 
+    /**
+     * @Description: f is TODO:
+     * @param: [shu, targ, has: 计数, cur]
+     * @return: void
+     */
     private static void f(int[] shu, int targ, int has, int cur) {
         if(has == targ) {
             System.out.println(stack);
